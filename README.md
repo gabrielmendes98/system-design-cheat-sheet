@@ -85,3 +85,6 @@
 - Virtualization / Windowing for large lists
 
 TODO: Create the drawing for the web app part
+
+1. Create a static web app drawing
+2. Create a more complex app with SSR and SSG
