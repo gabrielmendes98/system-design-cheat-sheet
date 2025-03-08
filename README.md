@@ -58,4 +58,30 @@
 
 ## 6. Frontend Specific - Deep dive into the Web App part
 
-TODO
+- Talk about the rendering strategy
+  - Client side rendering
+  - Server side rendering
+  - Static site generation
+- Which deployment strategy to each rendering strategy
+- Monitoring and observability
+- Talk about bundling optimizations
+  - Tree shaking
+  - Code splitting
+  - Lazy loading
+- Talk about image optimizations
+  - Compress images
+  - Use responsive images
+  - Cache images
+- Talk about caching strategies
+  - Client side caching
+  - Server side caching
+  - Edge caching
+  - CDN caching
+  - Service worker caching / offline capabilities
+- Talk about api calls optimizations and caching
+  - Ex: Use caching to avoid calling the same api again and again.
+  - Ex: RTK Query, React Query, etc.
+- Possibility to use micro frontends
+- Virtualization / Windowing for large lists
+
+TODO: Create the drawing for the web app part
