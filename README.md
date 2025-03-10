@@ -56,6 +56,9 @@
 
 ## 6. Frontend Specific - Deep dive into the Web App part
 
+- Let's divide the frontend system design into two parts:
+  - Application solution level
+  - Component level
 - Talk about the rendering strategy
   - Client side rendering
   - Server side rendering
@@ -84,10 +87,21 @@
 - Mobile first or desktop first?
 - Accessibility
 
-TODO: Create the drawing for the web app part
+### 6.1 Application solution level - Client side rendering or SSG
 
-1. Create a static web app drawing
-2. Create a more complex app with SSR and SSG
+![Client side rendering or SSG](./csr-and-ssg-solution.excalidraw.png)
+
+### 6.2 Application solution level - Server side rendering + SSG
+
+![Server side rendering + SSG](./ssr-plus-ssg-solution.excalidraw.png)
+
+- In this application, the webserver is responsible for getting all the information needed by the template, and then get and compose the template before sending the response to the client.
+- On the drawing, only the web server is communicating with backend or database, because at request time, the web server is the only resource able to do so. The client side can communicate with the backend too, but it is not on request time, it is on the client side.
+- We can improve this architecture, using serverless functions, etc, but the core idea is to have a web server that can communicate with the backend and the database, and then compose the template before sending the response to the client.
+
+### 6.3 Component level
+
+TODO: Create the drawing for the component level.
 
 ---
 
