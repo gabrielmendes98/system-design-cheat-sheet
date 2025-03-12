@@ -99,9 +99,9 @@
 - On the drawing, only the web server is communicating with backend or database, because at request time, the web server is the only resource able to do so. The client side can communicate with the backend too, but it is not on request time, it is on the client side.
 - We can improve this architecture, using serverless functions, etc, but the core idea is to have a web server that can communicate with the backend and the database, and then compose the template before sending the response to the client.
 
-### 6.3 Component level
+### 6.3 Component level system design
 
-TODO: Create the drawing for the component level.
+![Component level system design](./instagram-feed-example.excalidraw.png)
 
 ---
 
